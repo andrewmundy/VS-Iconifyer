@@ -1,0 +1,50 @@
+body{
+  background-color: #282c34;
+}
+
+.App {
+  text-align: center;
+}
+
+.icon{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tools{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // background: white;
+  width: 300px;
+  margin: auto;
+  border-radius: 30px;
+  *{
+    margin:5px;
+    cursor: pointer;
+  }
+
+}
+.text{
+  color:#fff5;
+}
+.highlight{
+  color:white;
+  background:#fff2;
+  border-radius: 3px;
+  padding:2px;
+}
+.content{ 
+  width:60vw;
+  margin: auto;
+}
+
+/* @keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */

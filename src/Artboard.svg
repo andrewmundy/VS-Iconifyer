@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="450px" height="450px" viewBox="0 0 450 450" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52 (66869) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#3A383B" offset="0%"></stop>
+            <stop stop-color="#272627" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="328.08749" height="401" rx="7.59767442"></rect>
+        <filter x="-1.1%" y="-0.9%" width="102.1%" height="101.7%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="0.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="3" dy="-6" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1" result="shadowMatrixInner1"></feColorMatrix>
+            <feGaussianBlur stdDeviation="0.5" in="SourceAlpha" result="shadowBlurInner2"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner2" result="shadowOffsetInner2"></feOffset>
+            <feComposite in="shadowOffsetInner2" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner2"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.204625226 0" type="matrix" in="shadowInnerInner2" result="shadowMatrixInner2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixInner1"></feMergeNode>
+                <feMergeNode in="shadowMatrixInner2"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="38.5659724%" y1="96.5499296%" x2="50%" y2="4.74867797%" id="linearGradient-4">
+            <stop stop-color="#0169AA" offset="0%"></stop>
+            <stop stop-color="#006EB4" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="4.59085877%" x2="86.0547952%" y2="92.6414632%" id="linearGradient-5">
+            <stop stop-color="#53AEE9" offset="0%"></stop>
+            <stop stop-color="#047DCD" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-6" points="46.0180854 130.491686 65.8082465 123.347981 239.627854 255.506532 192.179155 275.776527"></polygon>
+        <filter x="-0.3%" y="-0.3%" width="100.5%" height="100.7%" filterUnits="objectBoundingBox" id="filter-7">
+            <feGaussianBlur stdDeviation="0.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="82.6481618%" y1="7.65369642%" x2="5.37094629%" y2="100%" id="linearGradient-8">
+            <stop stop-color="#53AEE9" offset="0%"></stop>
+            <stop stop-color="#047DCD" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-9" points="45.0643427 225.979216 64.8545038 231.932304 239.86629 101.440618 193.132897 81.4382423"></polygon>
+        <filter x="-9.5%" y="-11.6%" width="119.0%" height="124.6%" filterUnits="objectBoundingBox" id="filter-10">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="6" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <filter x="-6.4%" y="-7.6%" width="112.8%" height="116.6%" filterUnits="objectBoundingBox" id="filter-11">
+            <feGaussianBlur stdDeviation="0.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="75.4963425%" y1="0%" x2="1.72182086%" y2="0%" id="linearGradient-12">
+            <stop stop-color="#0169AA" offset="0%"></stop>
+            <stop stop-color="#006EB4" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-13" points="24.0820033 289.558195 368.621555 341.945368 283.500019 377.187648"></polygon>
+        <filter x="-0.1%" y="-0.6%" width="100.3%" height="101.1%" filterUnits="objectBoundingBox" id="filter-14">
+            <feGaussianBlur stdDeviation="0.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.35193048 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-15">
+            <stop stop-color="#53AEE9" offset="0%"></stop>
+            <stop stop-color="#047DCD" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="vs-original" transform="translate(232.593609, 222.893671) rotate(-9.000000) translate(-232.593609, -222.893671) translate(48.093609, 22.393671)" fill-rule="nonzero">
+            <g id="Rectangle">
+                <use fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+            </g>
+            <polygon id="Path-20" fill="url(#linearGradient-4)" points="192.179155 178.11639 192.179155 275.776527 239.627854 255.506532 240.343161 101.678741 193.132897 81.4382423"></polygon>
+            <g id="Path-19">
+                <use fill="url(#linearGradient-5)" xlink:href="#path-6"></use>
+                <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
+            </g>
+            <g id="Path-18">
+                <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-9"></use>
+                <use fill="url(#linearGradient-8)" xlink:href="#path-9"></use>
+                <use fill="black" fill-opacity="1" filter="url(#filter-11)" xlink:href="#path-9"></use>
+            </g>
+            <g id="Path-22">
+                <use fill="url(#linearGradient-12)" xlink:href="#path-13"></use>
+                <use fill="black" fill-opacity="1" filter="url(#filter-14)" xlink:href="#path-13"></use>
+            </g>
+            <polygon id="Path-21" fill="url(#linearGradient-15)" points="283.023147 32.663227 368.859991 69.4034965 368.859991 341.945368 283.023147 377.187648"></polygon>
+        </g>
+    </g>
+</svg>
