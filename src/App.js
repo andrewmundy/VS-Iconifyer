@@ -34,7 +34,6 @@ class App extends Component {
       backColor:['#0169AA','#006EB4'],
       backPlate:['#3A383B','#272627']
     })
-    this.drawToSvg()
   }
   handleFrontClick = () => {
     this.setState({ displayFrontColorPicker: !this.state.displayFrontColorPicker })
@@ -163,7 +162,7 @@ class App extends Component {
                 <div style={ styles.backPlate } />
               </div>
               
-              <a id="imageLink" onClick={() => {this.original()}}><img title="Restore to original" src={reload}/></a> 
+              <a id="imageLink" onClick={this.original}><img title="Restore to original" src={reload}/></a> 
               <a id="imageLink" target="_blank" href={this.state.url} download="vs_icon.icns" onClick={() => {this.drawToSvg()}}><img title="Download as a .icns" src={download}/></a>
             </div>
 
