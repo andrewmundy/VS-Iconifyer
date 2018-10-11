@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import Red from './Icon.js'
-import Neon from './neon.js'
+import Red from './Components/Icon.js'
 import './App.scss';
 import reactCSS from 'reactcss'
 import { SketchPicker } from 'react-color';
-import download from './download.svg'
-import reload from './reload.svg'
+import download from './Assets/download.svg'
+import reload from './Assets/reload.svg'
 
 
 class App extends Component {
@@ -19,14 +18,14 @@ class App extends Component {
       displayBackColorPicker: false,
       url:'',
       neon:"noDisplay",
-      normal:"display",
-      whichStyle:'normal'
+      normal:"display"
     };
   }
   componentDidMount(){
     this.drawToSvg()
   }
   componentDidUpdate(){
+    
   }
 
   original = () => {
@@ -53,16 +52,20 @@ class App extends Component {
     })
   };
 
-  neOn = async () => {
-    if(this.state.whichStyle === "normal"){
+  neOn = () => {
+    if(this.state.neon === "display"){
       this.setState({
-        whichStyle:"neon"
+        neon:"noDisplay",
+        normal:"display"
       })
+      this.drawToSvg()
     }else{
+      console.log("helo")
       this.setState({
-        whichStyle:"normal"
+        neon:"display",
+        normal:"noDisplay"
       })      
-
+      this.drawToSvg()
     }
     
   }
@@ -81,11 +84,9 @@ class App extends Component {
   };
   
   drawToSvg = async () => {
-    let svg = document.getElementById(this.state.whichStyle);
+    let svg = document.querySelector('svg');
     let img = document.getElementById('image');
     let canvas = document.querySelector('canvas');
-    let context = canvas.getContext('2d');
-    context.clearRect(0, 0, canvas.width, canvas.height);
 
     // get svg data
     var xml = new XMLSerializer().serializeToString(svg);
@@ -99,11 +100,10 @@ class App extends Component {
     img.src = image64;
 
     // draw the image onto the canvas
-    context.drawImage(img, 0, 0);
+    canvas.getContext('2d').drawImage(img, 0, 0);
     this.setState({
       url:canvas.toDataURL('image/png',1.0)
-    },console.log("hello"))
-    console.log("goodbye")
+    })
   }
 
   render() {
@@ -143,17 +143,10 @@ class App extends Component {
       <div className="App">
         <div id="content" className="content">
           <div className='icon'>
-            <a href={this.state.url} onClick={() => {this.drawToSvg()}}><img id="image" alt="Copy and paste this as your new icon." title="Copy this image and paste it as your new icon."/></a>
-            <div style={{display:"none"}}>
+            <a href={this.state.url} target="blank" onClick={() => {this.drawToSvg()}}><img id="image" title="Copy this image and paste it as your new icon."/></a>
+            <div style={{display:'none'}}>
+            
             <Red
-              neon={this.state.neon}
-              normal={this.state.normal}
-              foreColor={this.state.foreColor}
-              backColor={this.state.backColor}
-              backPlate={this.state.backPlate}
-            />
-
-            <Neon
               neon={this.state.neon}
               normal={this.state.normal}
               foreColor={this.state.foreColor}
@@ -169,9 +162,9 @@ class App extends Component {
               <div onClick={ this.handleBackClick }>
                 <div style={ styles.backPlate } />
               </div>
-              <a id="imageLink" onClick={() => {this.neOn()}}> <img alt="neon" src={reload}/></a>
-              <a id="imageLink" onClick={() => {this.original()}}><img alt="restore" title="Restore to original" src={reload}/></a> 
-              <a id="imageLink" href={this.state.url} download="vs_icon.icns" onClick={() => {this.drawToSvg()}}><img title="Download as a .icns" src={download}/></a>
+              
+              <a id="imageLink" onClick={() => {this.original()}}><img title="Restore to original" src={reload}/></a> 
+              <a id="imageLink" target="_blank" href={this.state.url} download="vs_icon.icns" onClick={() => {this.drawToSvg()}}><img title="Download as a .icns" src={download}/></a>
             </div>
 
             { this.state.displayFrontColorPicker ? <div style={ styles.popover }>
@@ -186,7 +179,7 @@ class App extends Component {
 
           </div>
         </div>
-        <canvas  id="canvas" style={{display:"none"}} width="450px" height="450px"/>
+        <canvas style={{display:'none'}} id="canvas"  width="450px" height="450px"/>
       </div>
     );
   }

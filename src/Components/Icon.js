@@ -4,7 +4,7 @@ import React from 'react';
 export default class App extends React.Component {
   render() {    
     return (
-        <svg id="normal" width="450px" height="450px" viewBox="0 0 450 450" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <svg style={{display:this.props.normal}} id="normal" width="450px" height="450px" viewBox="0 0 450 450" version="1.1" xmlns="http://www.w3.org/2000/svg">
         
         <title>Artboard</title>
         <desc>Created by Andrew Mundy</desc>
