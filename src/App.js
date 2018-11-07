@@ -12,7 +12,7 @@ class App extends Component {
     super(props);
     this.state = {
       foreColor:[`rgba(83, 174, 233, 100`,`rgba(83, 174, 233, 100`],
-      backColor:['#0169AA','#006EB4'],
+      backColor:['#0169AA','#salmon'],
       backPlate:['#3A383B','#272627'],
       displayFrontColorPicker: false,
       displayBackColorPicker: false,
